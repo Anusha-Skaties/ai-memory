@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Groundwork AI · Hands-on AI setup for engineering leaders</title>
+    <meta
+      name="description"
+      content="Forward-deployed engineers who meet you 1:1, learn your daily work, and securely set up AI tools, connectors and automations on your own laptop. Built for project managers and leaders in mechanical, electrical, aviation and marine."
+    />
+    <meta name="theme-color" content="#0e1b2c" />
+    <meta property="og:title" content="Groundwork AI · AI set up by real people, on your laptop" />
+    <meta property="og:description" content="We meet you, learn your tedious tasks, and automate them securely on your machine. No code. Plain English." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..600;1,8..60,300..600&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html" aria-label="Groundwork AI home">
+          <svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true">
+            <rect x="1" y="1" width="32" height="32" fill="none" stroke="#0e1b2c" stroke-width="1.5" />
+            <circle cx="17" cy="17" r="9" fill="none" stroke="#0e1b2c" stroke-width="1.5" />
+            <path d="M17 4v26M4 17h26" stroke="#0e1b2c" stroke-width="0.8" />
+            <circle cx="17" cy="17" r="3" fill="#ff5a1f" />
+          </svg>
+          <span>Groundwork<small>AI · HUMAN-LED</small></span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" id="site-nav" aria-label="Main">
+          <a href="#about">About us</a>
+          <a href="#services">Services</a>
+          <a href="#how">How to book</a>
+          <a class="btn btn--signal" href="book.html" data-track="nav-book">Book a call <span class="arrow" aria-hidden="true">→</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero">
+        <div class="wrap">
+          <div>
+            <span class="eyebrow rise d1">For project managers &amp; engineering leaders</span>
+            <h1 class="rise d2">AI, set up by <em class="accent">real people</em>, on your own laptop.</h1>
+            <p class="hero-lede rise d3">
+              You run projects, crews and budgets, not code. We're forward-deployed engineers (FDEs) and senior technical support engineers who meet you
+              one-to-one, learn the tedious parts of your week, and securely set up AI to handle them. Then we explain
+              how it works in plain English.
+            </p>
+            <div class="hero-actions rise d4">
+              <a class="btn btn--signal" href="book.html" data-track="hero-book">Book a free discovery call <span class="arrow" aria-hidden="true">→</span></a>
+              <a class="btn btn--ghost" href="#services" data-track="hero-services">See what we set up</a>
+            </div>
+            <div class="hero-meta rise d5">
+              <div><strong>1 : 1</strong><span class="mono">Live with an engineer</span></div>
+              <div><strong>0</strong><span class="mono">Lines of code for you</span></div>
+              <div><strong>Your PC</strong><span class="mono">Everything runs locally</span></div>
+            </div>
+          </div>
+
+          <aside class="ledger sheet rise d4" aria-label="Examples of tasks we automate">
+            <div class="ledger-head mono"><span>Weekly task sheet</span><span>Before → After</span></div>
+            <ol>
+              <li>
+                <span class="task">Compile weekly project status report</span>
+                <span class="time"><s>3 h</s><b>6 min</b></span>
+              </li>
+              <li>
+                <span class="task">Chase RFIs &amp; vendor email threads</span>
+                <span class="time"><s>5 h</s><b>20 min</b></span>
+              </li>
+              <li>
+                <span class="task">Summarise inspection &amp; survey notes</span>
+                <span class="time"><s>2 h</s><b>5 min</b></span>
+              </li>
+              <li>
+                <span class="task">Update the schedule tracker from emails</span>
+                <span class="time"><s>90 min</s><b>auto</b></span>
+              </li>
+            </ol>
+            <p class="ledger-foot mono">Illustrative examples · results vary by task</p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ============ INDUSTRIES ============ -->
+      <section class="industries" aria-label="Industries we serve">
+        <div class="marquee" aria-hidden="true">
+          <ul>
+            <li>Mechanical</li><li>Electrical</li><li>Aviation</li><li>Marine</li><li>Construction</li><li>Energy &amp; Utilities</li><li>Manufacturing</li><li>Oil &amp; Gas</li>
+          </ul>
+          <ul>
+            <li>Mechanical</li><li>Electrical</li><li>Aviation</li><li>Marine</li><li>Construction</li><li>Energy &amp; Utilities</li><li>Manufacturing</li><li>Oil &amp; Gas</li>
+          </ul>
+        </div>
+        <p class="hp">We serve mechanical, electrical, aviation, marine, construction, energy, manufacturing and oil &amp; gas.</p>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="about" id="about">
+        <div class="wrap">
+          <div class="about-copy reveal">
+            <span class="eyebrow">About us</span>
+            <h2>Not a chatbot. <em class="accent">Real engineers</em> who deploy AI.</h2>
+            <p class="lead">
+              We're forward-deployed engineers (FDEs) and experienced technical support engineers. For years we've
+              deployed enterprise software, solved complex technical problems and kept busy professionals productive.
+              Now we bring that to AI.
+            </p>
+            <p>
+              Most AI tools assume you have time to learn them. Senior people in mechanical, electrical, aviation and
+              marine don't. So we come to you: a video call, a conversation about your day, then a secure remote session
+              where we set everything up on your machine while you watch, and explain each step as we go.
+            </p>
+            <p>When we're done, you have working automations, and you understand what they do and why.</p>
+
+            <ul class="principles">
+              <li><strong>Real humans</strong><span>The same named engineer from first call to follow-up.</span></li>
+              <li><strong>You stay in control</strong><span>You approve the session and can end it at any moment.</span></li>
+              <li><strong>Plain English</strong><span>No jargon. We explain how AI works using your own tasks.</span></li>
+              <li><strong>Built around you</strong><span>Automations shaped to your projects, files and habits.</span></li>
+            </ul>
+          </div>
+
+          <div class="demo reveal">
+            <div class="demo-frame" id="demo" role="region" aria-label="Video: how a remote setup session works">
+              <div class="demo-titlebar">
+                <span>Video · How a session works</span>
+                <span class="rec">Live</span>
+              </div>
+
+              <div class="scene-wrap">
+                <svg class="scene" viewBox="0 0 560 270" aria-hidden="true">
+                  <!-- Scene 1: the conversation -->
+                  <g class="bubble b1">
+                    <rect x="30" y="34" width="140" height="28" rx="6" />
+                    <path d="M80 62l8 10l4 -10z" />
+                    <text class="sm" x="100" y="52" text-anchor="middle">What slows you down?</text>
+                  </g>
+                  <g class="bubble b2">
+                    <rect x="398" y="34" width="132" height="28" rx="6" />
+                    <path d="M470 62l-6 10l-4 -10z" />
+                    <text class="sm" x="464" y="52" text-anchor="middle">Weekly reports!</text>
+                  </g>
+
+                  <!-- Engineer -->
+                  <g>
+                    <circle class="stroke fill-ink" cx="90" cy="112" r="24" />
+                    <path class="stroke" d="M62 114a28 28 0 0 1 56 0" />
+                    <rect class="stroke fill-ink" x="58" y="108" width="8" height="16" rx="3" />
+                    <rect class="stroke fill-ink" x="114" y="108" width="8" height="16" rx="3" />
+                    <path class="stroke" d="M118 124q0 14 -18 16" />
+                    <path class="stroke" d="M46 196q8 -46 44 -46t44 46" />
+                    <path class="stroke" d="M28 198h124" />
+                    <text x="90" y="226" text-anchor="middle">OUR ENGINEER</text>
+                  </g>
+
+                  <!-- Scene 2: secure tunnel -->
+                  <path class="stroke tunnel" d="M164 150H396" />
+                  <circle class="packet p1" cx="164" cy="150" r="4" />
+                  <circle class="packet p2" cx="164" cy="150" r="4" />
+                  <circle class="packet p3" cx="164" cy="150" r="4" />
+
+                  <circle class="shield-ring" cx="280" cy="151" r="30" />
+                  <g class="shield">
+                    <path d="M280 120l24 9v19c0 17 -11 28 -24 34c-13 -6 -24 -17 -24 -34v-19z" />
+                    <rect x="271" y="146" width="18" height="14" rx="2" />
+                    <path d="M275 146v-5a5 5 0 0 1 10 0v5" fill="none" />
+                  </g>
+                  <text x="280" y="212" text-anchor="middle">ENCRYPTED · APPROVED BY YOU</text>
+
+                  <!-- Scene 3: client laptop being set up -->
+                  <g>
+                    <rect class="stroke fill-ink" x="400" y="78" width="140" height="106" rx="4" />
+                    <path class="stroke" d="M386 190h168l-10 12h-148z" />
+                    <g class="screen-row r1">
+                      <path class="check" d="M412 103l4 4l8 -8" />
+                      <text class="sm" x="430" y="107">AI tools installed</text>
+                    </g>
+                    <g class="screen-row r2">
+                      <path class="check" d="M412 131l4 4l8 -8" />
+                      <text class="sm" x="430" y="135">Outlook connected</text>
+                    </g>
+                    <g class="screen-row r3">
+                      <path class="check" d="M412 159l4 4l8 -8" />
+                      <text class="sm" x="430" y="163">Report scheduled</text>
+                    </g>
+                    <text x="470" y="226" text-anchor="middle">YOUR LAPTOP</text>
+                  </g>
+
+                  <!-- Scene 4: it runs by itself -->
+                  <g class="done-badge">
+                    <rect x="452" y="44" width="100" height="24" rx="12" />
+                    <circle cx="468" cy="56" r="6" fill="none" stroke="#fff" stroke-width="1.4" />
+                    <path class="clock-hand" d="M468 56V52" transform-origin="468 56" />
+                    <text x="480" y="60">AUTOMATED</text>
+                  </g>
+                  <g class="toast">
+                    <rect x="196" y="40" width="168" height="30" rx="4" />
+                    <path class="check" d="M208 55l4 4l8 -8" />
+                    <text class="sm" x="226" y="59">Mon 7:00 · Report sent</text>
+                  </g>
+                </svg>
+
+                <p class="subtitle" id="demo-subtitle" aria-live="polite"></p>
+
+                <button class="play-btn" type="button" data-track="video-play" aria-label="Play video">
+                  <span>
+                    <span class="disc">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3l16 9-16 9z" fill="#fff" /></svg>
+                    </span>
+                    <span class="hint">Watch how it works · 10s</span>
+                  </span>
+                </button>
+              </div>
+
+              <ol class="demo-steps" id="demo-steps">
+                <li><button type="button" data-chapter="0"><b>01</b>We meet on a video call</button></li>
+                <li><button type="button" data-chapter="1"><b>02</b>You approve a secure session</button></li>
+                <li><button type="button" data-chapter="2"><b>03</b>We set up AI &amp; your tools</button></li>
+                <li><button type="button" data-chapter="3"><b>04</b>Your task runs on its own</button></li>
+              </ol>
+
+              <div class="controls">
+                <button class="ctrl" type="button" id="demo-toggle" aria-label="Play">
+                  <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z" /></svg>
+                  <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h4v16H6zM14 4h4v16h-4z" /></svg>
+                </button>
+                <button class="ctrl" type="button" id="demo-restart" aria-label="Restart">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v5h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                </button>
+                <div class="track" id="demo-track"><span class="track-fill" id="demo-fill"></span></div>
+                <span class="time mono" id="demo-time">0:00 / 0:10</span>
+              </div>
+            </div>
+            <div class="demo-caption">
+              <button class="replay" type="button" id="replay" data-track="video-replay">Replay ↻</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SERVICES ============ -->
+      <section class="services" id="services">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <span class="eyebrow">Our services</span>
+              <h2>Whatever is eating your week, <em class="accent">we can set it up.</em></h2>
+            </div>
+            <p>
+              Every engagement starts with your real work: the reports, emails, trackers and documents you deal with
+              every day. Here's what we typically set up. If you don't see your problem, ask.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <div class="service-list">
+              <article class="service reveal">
+                <span class="num">01 / Setup</span>
+                <h3>Setting up your AI tools</h3>
+                <p>Install and configure the latest AI software you need: Claude, ChatGPT &amp; Codex, Grok, Cursor, Microsoft Copilot Studio and many more.</p>
+                <ul class="tags"><li>Any AI platform</li><li>Desktop &amp; web</li><li>Best practices</li></ul>
+              </article>
+              <article class="service reveal">
+                <span class="num">02 / Connect</span>
+                <h3>Connectors to your tools</h3>
+                <p>Let AI safely read and act on the tools you already use: email, files, calendars, CRMs, design tools and external servers.</p>
+                <ul class="tags"><li>Outlook</li><li>Teams</li><li>SharePoint</li><li>Google Drive</li><li>Jira</li><li>Apollo</li><li>Figma</li><li>Firecrawl</li><li>MCP servers</li></ul>
+              </article>
+              <article class="service reveal">
+                <span class="num">03 / Grow</span>
+                <h3>Marketing &amp; outreach</h3>
+                <p>Find and enrich contacts, draft campaign emails, plan product launches and keep LinkedIn and X active, all in your voice.</p>
+                <ul class="tags"><li>Leads &amp; contacts</li><li>Campaigns</li><li>Launches</li><li>Social posts</li></ul>
+              </article>
+              <article class="service reveal">
+                <span class="num">04 / Automate</span>
+                <h3>Workflow automation</h3>
+                <p>Multi-step workflows that connect your apps: read the inbox, update the tracker, draft the replies and highlight what needs you. Your recurring tasks become reusable AI skills that run the same way every time.</p>
+                <ul class="tags"><li>Claude</li><li>AI</li><li>App setup</li></ul>
+              </article>
+              <article class="service reveal">
+                <span class="num">05 / Schedule</span>
+                <h3>Scheduled automations</h3>
+                <p>Automations that run on their own: a morning job-search shortlist, weekly marketing emails, product-launch checklists, fresh contacts for your pipeline and the latest AI advances delivered to your inbox.</p>
+                <ul class="tags"><li>Daily</li><li>Weekly</li><li>On trigger</li></ul>
+              </article>
+              <article class="service reveal">
+                <span class="num">06 / Documents</span>
+                <h3>Reports, decks &amp; trackers</h3>
+                <p>Turn raw notes and spreadsheets into finished Excel trackers, PowerPoint decks and Word reports, consistently formatted.</p>
+                <ul class="tags"><li>Excel</li><li>PowerPoint</li><li>Word</li><li>PDF</li></ul>
+              </article>
+              <article class="service reveal">
+                <span class="num">07 / Coaching</span>
+                <h3>How AI works, explained</h3>
+                <p>A relaxed walkthrough on your own tasks: what AI is good at, where it slips, how to check its work, and what not to share.</p>
+                <ul class="tags"><li>1:1</li><li>No jargon</li><li>Safe use</li></ul>
+              </article>
+              <article class="service reveal">
+                <span class="num">08 / Care</span>
+                <h3>Ongoing support</h3>
+                <p>Something changed? New project, new tool? Book a follow-up and we tune your automations so they keep working.</p>
+                <ul class="tags"><li>Follow-ups</li><li>Tune-ups</li><li>Priority help</li></ul>
+              </article>
+              <article class="service service--wide reveal">
+                <div>
+                  <h3>Any other setup you need</h3>
+                  <p>If it's repetitive and it lives on your laptop, there's a good chance we can automate it.</p>
+                </div>
+                <a class="btn" href="book.html" data-track="service-tell-us">Tell us about it <span class="arrow" aria-hidden="true">→</span></a>
+              </article>
+            </div>
+
+            <aside class="pipeline" id="pipeline" data-track="example-next" role="button" tabindex="0" aria-label="Example automations. Click to see the next example.">
+              <div class="pipeline-head mono"><span id="pipe-title">Daily site report</span><span class="live">Running</span></div>
+              <div class="pipe" id="pipe">
+                <span class="pulse" aria-hidden="true"></span>
+                <ol class="pipe-list">
+                <li class="node">
+                  <span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg></span>
+                  <div><strong>Monday, 7:00 AM</strong><span>Scheduled trigger</span></div>
+                </li>
+                <li class="node">
+                  <span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 7l9 6 9-6" /></svg></span>
+                  <div><strong>Reads last week's emails</strong><span>Outlook connector</span></div>
+                </li>
+                <li class="node">
+                  <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5z" /></svg></span>
+                  <div><strong>AI writes the daily report</strong><span>In your company format</span></div>
+                </li>
+                <li class="node">
+                  <span class="ico"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1" /><path d="M8 8h8M8 12h8M8 16h5" /></svg></span>
+                  <div><strong>Updates the tracker</strong><span>Excel on SharePoint</span></div>
+                </li>
+                <li class="node">
+                  <span class="ico"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" /></svg></span>
+                  <div><strong>Ready for your review</strong><span>You approve &amp; send</span></div>
+                </li>
+                </ol>
+              </div>
+              <p class="pipeline-foot"><span id="pipe-foot">Time saved: about <b>45 minutes</b> every day. You still have the final say.</span> <span class="mono" id="pipe-count">1 / 6 · Click for next →</span></p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SECURITY ============ -->
+      <section class="secure" id="security">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <span class="eyebrow">Secure by design</span>
+              <h2>We connect the way your IT department would.</h2>
+            </div>
+            <p>
+              Remote sessions use enterprise-grade remote-support tools such as BeyondTrust. They're encrypted and
+              logged, and they only start when you approve them.
+            </p>
+          </div>
+          <div class="secure-grid reveal">
+            <div><span class="mono">01</span><h3>You start it</h3><p>Nothing happens until you accept the session on your screen.</p></div>
+            <div><span class="mono">02</span><h3>You see everything</h3><p>Every click happens in front of you, and we explain it as we go.</p></div>
+            <div><span class="mono">03</span><h3>No passwords shared</h3><p>You sign in to your own accounts. We never ask for or store your credentials.</p></div>
+            <div><span class="mono">04</span><h3>Your policies first</h3><p>We're happy to work alongside your IT team and within company rules.</p></div>
+          </div>
+          <p class="secure-note">BeyondTrust is a trademark of its respective owner. Mentioned to describe the class of tools we use, not an endorsement.</p>
+        </div>
+      </section>
+
+      <!-- ============ HOW IT WORKS ============ -->
+      <section class="how" id="how">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <span class="eyebrow">How to book</span>
+              <h2>Book online. We'll call <em class="accent">when it suits you.</em></h2>
+            </div>
+            <p>No sales script and no commitment. Tell us what you need, choose a time, and a real engineer will connect with you.</p>
+          </div>
+
+          <ol class="steps reveal">
+            <li><h3>Book online</h3><p>Fill in a short form with your name, role and a few lines about what slows you down.</p></li>
+            <li><h3>Pick your time</h3><p>Choose a date and time that suits you. We work around site visits and time zones.</p></li>
+            <li><h3>We talk it through</h3><p>A friendly video call to understand your tasks and agree on what to automate first.</p></li>
+            <li><h3>We set it up</h3><p>A secure remote session on your laptop. You leave with working automations.</p></li>
+          </ol>
+
+          <div class="cta-band sheet reveal">
+            <div>
+              <h3>Ready to get hours back every week?</h3>
+              <p>The first discovery call is free and takes about 30 minutes.</p>
+            </div>
+            <a class="btn btn--signal" href="book.html" data-track="cta-book">Book your call <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <a class="brand" href="index.html">
+          <svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true">
+            <rect x="1" y="1" width="32" height="32" fill="none" stroke="#0e1b2c" stroke-width="1.5" />
+            <circle cx="17" cy="17" r="9" fill="none" stroke="#0e1b2c" stroke-width="1.5" />
+            <path d="M17 4v26M4 17h26" stroke="#0e1b2c" stroke-width="0.8" />
+            <circle cx="17" cy="17" r="3" fill="#ff5a1f" />
+          </svg>
+          <span>Groundwork<small>AI · HUMAN-LED</small></span>
+        </a>
+        <nav aria-label="Footer">
+          <a href="#about">About us</a>
+          <a href="#services">Services</a>
+          <a href="#security">Security</a>
+          <a href="book.html">Book a call</a>
+          <a href="mailto:hello@example.com" data-track="email">hello@example.com</a>
+        </nav>
+        <div class="fine mono">
+          <span>© <span id="year">2026</span> Groundwork AI</span>
+          <span>You lead the work. We automate the rest.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "groundwork-ai-site",
+  "version": "1.0.0",
+  "description": "Marketing site + booking API for a hands-on AI enablement service. Runs on Cloud Run, stores bookings in Firestore.",
+  "private": true,
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --env-file-if-exists=.env --watch src/server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "@google-cloud/firestore": "^7.11.0",
+    "compression": "^1.8.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "google-auth-library": "^11.3.0",
+    "helmet": "^8.1.0",
+    "nodemailer": "^10.1.1",
+    "zod": "^3.25.0"
+  }
+}

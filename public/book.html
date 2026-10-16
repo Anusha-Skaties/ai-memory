@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book a call · Groundwork AI</title>
+    <meta name="description" content="Tell us what you need and pick a time. A real engineer will connect with you and set things up." />
+    <meta name="theme-color" content="#0e1b2c" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..600;1,8..60,300..600&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+    <script src="book.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html" aria-label="Groundwork AI home">
+          <svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true">
+            <rect x="1" y="1" width="32" height="32" fill="none" stroke="#0e1b2c" stroke-width="1.5" />
+            <circle cx="17" cy="17" r="9" fill="none" stroke="#0e1b2c" stroke-width="1.5" />
+            <path d="M17 4v26M4 17h26" stroke="#0e1b2c" stroke-width="0.8" />
+            <circle cx="17" cy="17" r="3" fill="#ff5a1f" />
+          </svg>
+          <span>Groundwork<small>AI · HUMAN-LED</small></span>
+        </a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Main">
+          <a href="index.html#about">About us</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#how">How to book</a>
+          <a class="btn btn--signal" href="book.html" aria-current="page" data-track="nav-book">Book a call <span class="arrow" aria-hidden="true">→</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="book">
+      <div class="wrap">
+        <div class="book-intro">
+          <span class="eyebrow rise d1">Book a call</span>
+          <h1 class="rise d2">Tell us what's slowing you down.</h1>
+          <p class="rise d3">
+            Share a few details and pick a time that suits you. A real engineer will confirm by email or phone. No
+            obligation, no sales pitch.
+          </p>
+
+          <ol class="next-list rise d4">
+            <li>
+              <span class="mono">01</span>
+              <div><strong>We read your request</strong><p>Usually within one business day.</p></div>
+            </li>
+            <li>
+              <span class="mono">02</span>
+              <div><strong>We confirm your slot</strong><p>Or suggest the closest available time.</p></div>
+            </li>
+            <li>
+              <span class="mono">03</span>
+              <div><strong>30-minute discovery call</strong><p>We understand your tasks and plan what to automate.</p></div>
+            </li>
+            <li>
+              <span class="mono">04</span>
+              <div><strong>Secure setup session</strong><p>We connect to your laptop with your approval and set it all up.</p></div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="form-card sheet rise d3" id="form-card">
+          <form id="booking-form" novalidate>
+            <fieldset>
+              <legend>About you</legend>
+              <div class="grid-2">
+                <div class="field">
+                  <label for="name">Full name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="100" />
+                  <span class="err" data-for="name"></span>
+                </div>
+                <div class="field">
+                  <label for="role">Role / title</label>
+                  <input id="role" name="role" type="text" autocomplete="organization-title" required minlength="2" maxlength="100" placeholder="e.g. Senior Project Manager" />
+                  <span class="err" data-for="role"></span>
+                </div>
+                <div class="field">
+                  <label for="company">Company <span class="opt">(optional)</span></label>
+                  <input id="company" name="company" type="text" autocomplete="organization" maxlength="120" />
+                  <span class="err" data-for="company"></span>
+                </div>
+                <div class="field">
+                  <label for="industry">Industry</label>
+                  <select id="industry" name="industry" required>
+                    <option value="">Select…</option>
+                    <option>Mechanical</option>
+                    <option>Electrical</option>
+                    <option>Aviation</option>
+                    <option>Marine</option>
+                    <option>Construction</option>
+                    <option>Energy &amp; Utilities</option>
+                    <option>Manufacturing</option>
+                    <option>Oil &amp; Gas</option>
+                    <option>Other</option>
+                  </select>
+                  <span class="err" data-for="industry"></span>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>How to reach you</legend>
+              <div class="grid-2">
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required maxlength="254" />
+                  <span class="err" data-for="email"></span>
+                </div>
+                <div class="field">
+                  <label for="phone">Phone number</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+1 555 123 4567" />
+                  <span class="err" data-for="phone"></span>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>When can we connect?</legend>
+              <div class="grid-2">
+                <div class="field">
+                  <label for="preferredDate">Preferred date</label>
+                  <input id="preferredDate" name="preferredDate" type="date" required />
+                  <span class="err" data-for="preferredDate"></span>
+                </div>
+                <div class="field">
+                  <label for="preferredTime">Preferred time</label>
+                  <input id="preferredTime" name="preferredTime" type="time" required />
+                  <span class="err" data-for="preferredTime"></span>
+                </div>
+                <div class="field full">
+                  <input id="timezone" name="timezone" type="hidden" />
+                  <span class="help" id="tz-note">Times are in your local time zone.</span>
+                </div>
+                <div class="field full">
+                  <label for="alternateAvailability">Other times that work <span class="opt">(optional)</span></label>
+                  <input id="alternateAvailability" name="alternateAvailability" type="text" maxlength="300" placeholder="e.g. Weekday mornings before 9, or Thursday afternoons" />
+                  <span class="err" data-for="alternateAvailability"></span>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>What do you need?</legend>
+              <div class="field">
+                <label for="details">Additional details</label>
+                <textarea id="details" name="details" required minlength="10" maxlength="2000" placeholder="e.g. I spend every Friday compiling a status report from emails and site notes. I'd also like help connecting AI tools to Outlook."></textarea>
+                <span class="help"><span id="details-count">0</span> / 2000</span>
+                <span class="err" data-for="details"></span>
+              </div>
+            </fieldset>
+
+            <div class="hp" aria-hidden="true">
+              <label for="website">Leave this field empty</label>
+              <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div class="field">
+              <label class="check-field">
+                <input id="consent" name="consent" type="checkbox" required />
+                <span>I agree to be contacted about this request. We only use your details to arrange and deliver your session, and never sell them.</span>
+              </label>
+              <span class="err" data-for="consent"></span>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn--signal" type="submit" id="submit-btn">
+                <span class="spinner" aria-hidden="true"></span>
+                <span class="label">Request my call</span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </button>
+              <span class="form-status" id="form-status" role="alert" aria-live="polite"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="fine mono">
+          <span>© <span id="year">2026</span> Groundwork AI</span>
+          <span><a href="mailto:hello@example.com" data-track="email">hello@example.com</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
